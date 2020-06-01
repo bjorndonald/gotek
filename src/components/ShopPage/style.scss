@@ -1,0 +1,143 @@
+@import './../../scss/utilities';
+#shop{
+    // Essential customization
+    nav{
+        color: #222;
+        border-bottom-color: #ccc;
+        svg{ 
+            fill: #222;
+        }
+
+        .tag{
+            background: #222;
+            color: #f2f2f2;
+        }
+    }
+
+    .nav-options{
+        border-bottom: 1px solid #ccc;
+        a{
+            color: #222;
+            ///nkjkk
+        }
+    }       
+
+    footer{
+        color: #f2f2f2;
+        a{
+            color: #f2f2f2;
+        }
+    }
+    //////////////////////////////////////////////////////////////
+    //Header section
+    header{
+        //background: url('./../src/img/slide4.jpg');
+        background-position: center !important;
+        background-size: cover !important;
+        background-attachment: fixed;
+        height: 200px;
+        background: rgb(232, 250, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: 'Montserrat';
+        h1{
+            margin: 0;
+        }
+    }
+
+    .content{
+        .utilities{
+            width: calc(50% + 25px);
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            margin: auto;
+            padding: 3rem 50px;
+
+            .filter-button{
+                width: 317px;
+                height: 56px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border: 1px solid #ccc;
+                padding: 0 20px;
+
+                svg{
+                    fill: #222;
+                    width: 22px;
+                    height: 22px;
+                    margin-bottom: -3px;
+                }
+            }
+        }
+
+        .products{
+            .container{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-gap: 50px;
+                .product{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-bottom: 1rem;
+
+                    img{
+                        width: 100%;
+                        //height: 400px;
+                    }
+                    h3{
+                        margin-top: 1rem;
+                        font-family: 'proxima nova';
+                        color: #888;
+                        text-transform: uppercase;
+                        font-size: medium;
+                    }
+                    h4{
+                        padding: 0.5rem 0;
+                        font-family: 'Montserrat';
+                    }
+                    p{
+                        margin-bottom: 1rem;
+                        font-family: 'Corben';
+
+                        span:first-child{
+                            color: red;
+                            margin-right: 0.5rem;
+                        }
+
+                        span:last-child{
+                            text-decoration: line-through;
+                        }
+                    }
+                }
+            }
+
+            .product-index{
+                display: flex;
+                justify-content: center;
+                padding: 10vh 0;
+
+                a{
+                    display: flex;
+                    cursor: pointer;
+                    svg{
+                        margin-left: 0.25rem;
+                        width: 10px;
+                        height: 26px;
+                        transition: .3s;
+                    }
+
+                    &:hover{
+                        svg{
+                            transform: translateX(5px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
