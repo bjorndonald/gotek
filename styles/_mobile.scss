@@ -1,0 +1,340 @@
+@media(max-width:700px){
+
+    //Navigation stack
+    nav{
+        form{
+            display: none !important;
+        }
+
+        .bars{
+            display: flex !important;
+        }
+
+        .bag{
+            display: block !important;
+
+            position: relative;
+            svg{
+                width: 24px !important;
+                height: 24px !important
+            }
+                .tag{
+                    width: 16px;
+                    position: absolute;
+                    top: -6px;
+                    left: 95%;
+                    height: 16px;
+                    background: #f4f4f4;
+                    border-radius: 50%;
+                    font-size: 12px;
+                    font-weight: bold;
+                    color: #333;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+        }
+
+        .logo{
+            svg{
+                width: 200px !important;
+            }
+        }
+
+        .right{
+            display: none !important;
+        }
+    }
+
+    .nav-options{
+        display: none !important;
+    }
+
+    #home{
+        header{
+            cursor: auto !important;
+            padding: 0 !important;
+            height: 30vh !important;
+
+            .eye-cursor, .left-cursor, .right-cursor{
+                display: none !important;
+            }
+            .container{
+                .slider{
+                    grid-template-columns: 1fr 10fr 1fr !important;
+                    .slider-wrapper{
+                        width: 100% !important;
+                        height: 30vh !important;
+
+                        .slide.active{
+                            left: calc(((100vw - 75vw)/ 2) - 16px) !important;
+                        }
+
+                        .slide{
+                            width: calc(100vw - ((2 / 12) * 100vw)) !important;
+                            height: 30vh !important;
+                            padding: 0 !important;
+                            // height: 30vh !important;
+
+
+                            .img-banner{
+                                img{
+                                    height: 30vh !important;
+                                }
+                            }
+
+                            h1.left{
+                                left: calc(100vw - ((11.9 / 12) * 100vw)) !important;
+                            }
+
+                            .slide-bottom{
+                                left: calc(100vw - ((11.9 / 12) * 100vw)) !important;
+
+                                small{
+                                    font-size: x-small !important;
+                                }
+
+                                h1{
+                                    font-size: small;
+                                }
+                            }
+                        }
+                    }
+
+                    .left-border{
+
+                    }
+
+                    .right-border{
+                        span{
+                            font-size: xx-small;
+                            
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .content{
+            padding: 12vh 0 !important;
+
+            .container{
+                padding: 0 !important;
+
+                .top{
+                    padding: 0 !important;
+
+                    li{
+                        margin-right: 3rem;
+                        small{
+                            font-size: x-small;
+                        }
+
+                        h2{
+                            font-size: small;
+                        }
+                    }
+                }
+
+                .body{
+                    padding: 1rem 0 !important;
+                    display: grid;
+                    grid-template-columns: 100% 100% 100%;
+                    grid-gap: 3rem;
+                    //flex-direction: column !important;
+
+                    .middle, .right{
+                        margin: 0 !important;
+                        width: 100%;
+                        
+                        img{
+                            width: 100%;
+                        }
+
+                        .bottom{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: flex-end;
+                            font-size: medium;
+                        }
+
+                        h2, h4{
+                            position: relative !important;
+                            top: auto !important;
+                            left: auto !important;
+                        }
+
+                        h2{
+                            strong{
+                                font-size: large;
+                            }
+                        }
+                    }
+
+                    .left, .middle, .right{
+                        width: 100%;
+                        
+                        img{
+                            width: 100%;
+                        }
+
+                        .bottom{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: flex-end;
+                            font-size: medium;
+                        }
+
+                        h2, h4{
+                            position: relative !important;
+                            top: auto !important;
+                            left: auto !important;
+                        }
+
+                        h2{
+                            strong{
+                                font-size: large;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .mailing-list{
+        .container{
+            flex-direction: column !important;
+
+            form{
+                width: 100% !important;
+                height: 15vw !important; 
+
+                button{
+                    width: 20.55556vw !important;
+                    
+                }
+            }
+        }
+    }
+
+    footer{
+        padding-top: 1rem;
+        .container{
+            display: block !important;
+            .address{
+                h2{
+                    width: 100%;
+                    font-size: 3vw;
+                    line-height: 4vw;
+                }
+            }
+            .links{
+                width: 100% !important;
+                display: grid;
+                grid-template-columns: 1fr 1fr !important;
+                
+
+                ul{
+                    padding: 0 !important;
+                    margin: 1rem 0;
+                    
+                }
+            }
+        }
+    }
+
+    .popup{
+        .popup_inner{
+            position: absolute;
+            left: 0;
+            top: 1rem;
+        }
+    }
+
+    .filters{
+        .body{
+            flex-direction: column;
+
+            .filter-section{
+                width: 100%;
+            }
+            ul{
+                display: none ;
+            }
+
+            .web-filter{
+                display: none;
+            }
+
+            .mobile-filter{
+                display: block !important;
+
+                ul{
+                    //height: auto !important;
+                }
+            }
+        }
+
+        .filter-bottom{
+            flex-direction: column !important;
+            display: flex !important;
+            a:first-child{
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    #shop{
+        .bars{
+            .bar{
+                background: #222;
+            }
+        }
+        .container{
+            padding: 0 !important;
+        }
+        header{
+            small{
+                text-align: center;
+            }
+        }
+
+        .content{
+
+            .utilities{
+                width: 81.6% !important;
+                padding: 1rem !important;
+                flex-direction: column;
+                .filter-button{
+                    width: calc(100% - 2rem - 10px) !important;
+                    margin-bottom: 1rem;
+                    //padding-right: 0 !important;
+                }
+
+                .dropdown{
+                    width: 100% !important;
+
+                    ul{
+                        width: calc(100% - 40px - 2px) !important;
+                        li{
+                            width: 100% !important;
+                        }
+                    }
+                }
+            }
+
+            .products{
+                .container{
+                    padding: 0 !important;
+                    grid-template-columns: 1fr 1fr !important;
+                    grid-gap: 2rem !important;
+                    .product{
+
+                    }
+                }
+            }
+        }
+    }
+}

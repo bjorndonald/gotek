@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "src/*": ["src/*"],
+        "test/*": ["test/*"],
+        "underscore": ["lodash"],
+        "components/*": ["src/components/*"],
+        "containers/*": ["src/containers/*"],
+        "graphics/*": ["src/graphics/*"],
+        "img/*": ["src/img/*"],
+        "styles/*": ["src/styles/*"],
+        "utilities/*": ["src/utilities/*"],
+      }
+    }
+  }
